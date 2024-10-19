@@ -1,7 +1,7 @@
 
-coins = [50, 25, 10, 5, 2, 1]
 
-def find_coins_greedy(sum):
+
+def find_coins_greedy(sum, coins):
     coins.sort(reverse = True)
 
     result_coins = {}
@@ -17,5 +17,6 @@ def find_coins_greedy(sum):
             if (return_sum == sum):
                 return result_coins
 
-print(find_coins_greedy(143))
-print(find_coins_greedy(113))
+coins = [50, 25, 10, 5, 2, 1]
+print(f"143: {find_coins_greedy(143, coins)}")
+print(f"113: {find_coins_greedy(113, coins)}")
