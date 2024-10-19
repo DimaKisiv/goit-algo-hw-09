@@ -1,6 +1,4 @@
 
-
-
 def find_coins_greedy(sum, coins):
     coins.sort(reverse = True)
 
@@ -18,5 +16,4 @@ def find_coins_greedy(sum, coins):
                 return result_coins
 
 coins = [50, 25, 10, 5, 2, 1]
-print(f"143: {find_coins_greedy(143, coins)}")
 print(f"113: {find_coins_greedy(113, coins)}")
